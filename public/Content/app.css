@@ -1,0 +1,411 @@
+/* This is the CSS scripts used for the website 
+They are separated by a comment to show which CSS was used by a specific page */
+
+/* Global setting */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS for index.ejs start*/
+body{
+    background-color: #0f0e17;
+    color: #a7a9be;
+    margin:auto;
+}
+
+.container {
+    min-height: 100%;  
+    min-height: 100vh; 
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: #fffffe;
+}
+
+span{
+    color: #ffc107;
+}
+
+/* CSS for index.ejs END */
+
+
+/* CSS for about.ejs START */
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about-main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text{
+    width: 550px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+button{
+    padding: 13px 30px;
+}
+
+.about-text h2{
+    color: #fffffe;
+}
+
+.about-text p{
+    color: #a7a9be;
+}
+
+/* CSS for about.ejs END */
+
+
+/* CSS for services.ejs START*/
+
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f0e17;
+}
+
+.wrapper h1{
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+    color:#fffffe;
+}
+
+.content-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #242629;
+    margin: 10px 4px;
+    border: 1px solid #ffc107;
+    transition: 3s;
+}
+
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #94a1b2;
+    text-justify: auto;
+}
+
+.card:hover h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #fffffe;
+}
+
+.card p{
+    color: #94a1b2;
+    text-align: center;
+    text-justify: auto;
+}
+
+.card:hover p{
+    color: #fffffe;
+    text-align: center;
+}
+
+.card i{
+    margin: 20px;
+    color:#94a1b2;
+}
+
+.card:hover i{
+    margin: 20px;
+    color:#fffffe;
+}
+
+
+.card:nth-child(1):hover{
+    background:linear-gradient(45deg, 
+    rgba(255,0,0,0.5) 0%, 
+    rgba(255,20,0,0.6) 100%), 
+    url('/assets/images/reverse-engineering.png');
+}
+
+.card:nth-child(2):hover{
+    background:linear-gradient(45deg, 
+    rgba(0,245,109,0.5) 0%, 
+    rgba(0,255,120,0.6) 100%), 
+    url('/assets/images/android.png');
+}
+
+.card:nth-child(3):hover{
+    background:linear-gradient(45deg, 
+    rgba(32,32,255,0.5) 0%, 
+    rgba(61, 61, 255, 0.6) 100%), 
+    url('/assets/images/programming2.png');
+}
+
+/* responsive for services.ejs */
+@media(max-width: 991px){
+    .wrapper{
+        padding: 25px;
+    }
+
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+/* CSS for services.ejs END */
+
+/* CSS for contact.ejs START */
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact-content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .contact-content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffc107
+}
+
+.contact .contact-content p{
+    font-weight: 300;
+    color: #fffffe
+}
+
+.container-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-contact .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact .contact-info .box-info{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-contact .contact-info .box-info .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #0f0e17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #ffc107;
+}
+
+.container-contact .contact-info .box-info .text-details{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fffffe;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container-contact .contact-info .box-info .text-details h3{
+    color: #ffc107;
+    font-weight: 300;
+}
+
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background: #ffc107;
+}
+
+.contact-form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .inputBox input,
+.contact-form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: #ffc107;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #0f0e17;
+}
+
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .inputBox input[type="submit"]{
+    width: 100px;
+    background: #0f0e17;
+    color: #ffc107;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* responsive for contact.ejs */
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+
+    .container-contact{
+        flex-direction: column;
+    }
+}
+/* CSS for contact.ejs END */
+
+/* CSS for projects.ejs START */
+.projects {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects .proj-content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.projects .proj-content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffc107
+}
+
+.projects .proj-content p{
+    font-weight: 300;
+    color: #fffffe
+}
+
+.card-content .card-proj{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.card-content .card-proj h4{
+    color:#ffc107;
+    
+}
+
+.card-content .card-proj h5{
+    color:#fffffe;
+    
+}
+
+.card-proj {
+    box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
+    transition: 0.3s;
+  }
+  
+  .card-proj:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container-proj {
+    padding: 2px 16px;
+  }
+
+/* CSS for projects.ejs END */

@@ -1,0 +1,36 @@
+<!-- includes for header and top navbar -->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<!-- This utilizes wrappers and cards to allow me to wrap the content in one place so it can be spaced properly  
+and use each card in the same wrapper to add details on what are my services -->
+
+<div class="wrapper">
+  <h1><span>My Services</span></h1>
+  <div class="content-box">
+
+    <div class="card">
+      <i class="fa-solid fa-gears fa-2xl"></i>
+      <h2>Reverse Engineering</h2>
+      <p>I can help review old code or find something specific that you might need.</p>
+    </div>
+
+   <div class="card">
+      <i class="fa-solid fa-mobile fa-2xl"></i>
+      <h2>Android Application</h2>
+      <p>I can develop an android application for your business or personal needs.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-terminal fa-2xl"></i>
+      <h2>General Programming</h2>
+      <p>I can develop applications based on your needs.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- includes for footer and bottom navbar -->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

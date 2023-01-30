@@ -1,0 +1,33 @@
+<!-- Jasper Jan Tan
+     301249461
+     January 2023 -->
+     
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+  <div class="container">
+    <h1><span class="auto-type"></span></h1>
+    <p>Passionate. Living in the moment. Tech Enthusiast.</p>
+    <form action = "about.ejs">
+      <a href ="/about"><button type="button" class="btn btn-outline-warning">About me</button></a>
+    </form>
+  </div>
+
+<!-- for typing effect start -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+
+  var typed = new Typed(".auto-type", {
+    strings: ["Jasper Jan Tan", "Developer", "Audiophile"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+  })
+
+</script>
+
+<!-- Typing effect end -->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

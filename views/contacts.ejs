@@ -1,0 +1,81 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+  <section class="contact">
+    <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p>For furthur information or inqueries, contact me through here.</p>
+    </div>
+
+    <div class="container-contact">
+      <div class="contact-info">
+
+        <div class="box-info">
+          <div class="icon">
+            <i class="fa-sharp fa-solid fa-mobile-button"></i>
+          </div>
+
+          <div class="text-details">
+            <h3>Phone</h3>
+            <p>(437) 260-4913</p>
+          </div>
+        </div>
+
+        <div class="box-info">
+          <div class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+
+          <div class="text-details">
+            <h3>Email</h3>
+            <p>jasperjantan1996@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="box-info">
+          <div class="icon">
+            <i class="fa-solid fa-location-pin"></i>
+          </div>
+
+          <div class="text-details">
+            <h3>Address</h3>
+            <p>#97 601 Shoreline Drive,<br>Mississauga, ON,<br>L5B 4K3</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.6848285682386!2d-79.63077!3d43.57145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b46c17430d117%3A0x9e658f2e04414152!2s601%20Shoreline%20Dr%20%2397%2C%20Mississauga%2C%20ON%20L5B%204K3!5e0!3m2!1sen!2sca!4v1674164499193!5m2!1sen!2sca" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>  
+      </div>
+
+
+        <div class="contact-form">
+          <form action="/home">
+            <h2>Send Message</h2>
+
+            <div class="inputBox">
+              <input type="text" name="" required="required"/>
+              <span>Full Name</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" required="required"/>
+              <span>Email Address</span>
+            </div>
+
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your message or inquiry</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="submit" value="Send"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
