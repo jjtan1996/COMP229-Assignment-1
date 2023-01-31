@@ -75,6 +75,27 @@ button{
     color: #a7a9be;
 }
 
+/* responsive for about.ejs */
+@media(max-width: 991px){
+    .about-text{
+        padding: 25px;
+    }
+
+    .about-text h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .about-text h2{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .about-main{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/* responsive for about.ejs */
 /* CSS for about.ejs END */
 
 
@@ -342,11 +363,17 @@ button{
 
 @media (max-width: 991px){
     .contact{
-        padding: 50px;
+        padding: 25px;
     }
 
     .container-contact{
         flex-direction: column;
+        width: 100%;
+    }
+
+    .box-info{
+        font-size: 2.5em;
+        font-weight: 600;
     }
 }
 /* CSS for contact.ejs END */

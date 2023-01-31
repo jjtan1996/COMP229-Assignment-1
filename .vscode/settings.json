@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/b0369abd-7e7f-4c95-a823-0a56bc85d543/AppServices/subscriptions/b0369abd-7e7f-4c95-a823-0a56bc85d543/resourceGroups/jjtan_group/providers/Microsoft.Web/sites/jjtan",
+    "appService.deploySubpath": "."
+}
