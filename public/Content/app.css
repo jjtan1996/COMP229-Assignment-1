@@ -1,5 +1,6 @@
 /* This is the CSS scripts used for the website 
-They are separated by a comment to show which CSS was used by a specific page */
+They are separated by a comment to show which CSS was used by a specific page 
+Some pages also have responsive features*/
 
 /* Global setting */
 
@@ -9,6 +10,7 @@ They are separated by a comment to show which CSS was used by a specific page */
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 
 /* CSS for index.ejs start*/
 body{
