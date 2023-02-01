@@ -11,6 +11,9 @@ Some pages also have responsive features*/
     font-family: 'Poppins', sans-serif;
 }
 
+.nav-link {
+    color: #ffc107;
+}
 
 /* CSS for index.ejs start*/
 body{
@@ -56,7 +59,7 @@ span{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .about-text{

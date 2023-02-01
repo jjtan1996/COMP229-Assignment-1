@@ -44,35 +44,34 @@
         </div>  
       </div>
 
-
+       
         <div class="contact-form">
-          <form action="/home">
+          <form action="/home" onsubmit="return getDetails()">
             <h2>Send Message</h2>
 
             <div class="inputBox">
-              <input type="text" name="" required="required"/>
+              <input id="userField" type="text" name="" required="required"/>
               <span>Full Name</span>
             </div>
 
             <div class="inputBox">
-              <input type="text" name="" required="required"/>
+              <input id="emailField" type="text" name="" required="required"/>
               <span>Email Address</span>
             </div>
 
             <div class="inputBox">
-              <textarea required="required"></textarea>
+              <textarea id="inquiryField" required="required"></textarea>
               <span>Type your inquiry</span>
             </div>
 
             <div class="inputBox">
-              <input type="submit" value="Send"/>
+              <input id="submitBtn" type="submit" value="Send""/>
             </div>
+
           </form>
         </div>
       </div>
     </div>
-
-
   </section>
 
 <%- include ('partials/bottom_nav.ejs') %>
