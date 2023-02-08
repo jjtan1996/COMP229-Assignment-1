@@ -1,6 +1,7 @@
-/* This is the CSS scripts used for the website 
-They are separated by a comment to show which CSS was used by a specific page 
-Some pages also have responsive features*/
+/* app.css
+Jasper Jan Tan
+301249471
+Feb 2, 2023 */
 
 /* Global setting */
 
@@ -441,3 +442,12 @@ button{
   }
 
 /* CSS for projects.ejs END */
+
+/* CSS for users.ejs START */
+
+.users-container{
+    color: #fffffe;
+    background-color: #fffffe;
+}
+
+/* CSS for users.ejs END */
